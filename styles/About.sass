@@ -1,0 +1,25 @@
+@use 'variables'
+
+.about
+    display: flex
+    position: relative
+    flex-direction: column
+    align-items: center
+    text-align: center
+    left: 50%
+    transform: translate(-50%, 0)
+    padding: 1.5rem .5rem
+    max-width: 1280px
+    .about-text
+        font-size: 1.2rem
+    a
+        padding: .5rem 1rem
+        width: fit-content
+        text-decoration: none
+        margin-top: 2rem
+        color: variables.$dark-color
+        background-color: variables.$dark-yellow
+        border-radius: 10px
+        text-transform: uppercase
+        font-weight: 600
+        z-index: 99

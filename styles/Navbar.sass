@@ -1,0 +1,41 @@
+@use 'variables'
+    
+.navbar
+    background-color: variables.$dark-color
+    z-index: 99
+    .container-fluid
+        .navbar-brand
+            margin-left: .4em
+            margin-top: .2rem
+            .logo, p
+                display: inline
+                color: variables.$primary-color
+                font-family: variables.$primary-font
+                font-size: 2rem
+        .navbar-toggler
+            &:focus
+                border: 3px solid variables.$primary-color
+
+    
+.navbar-collapse
+    display: flex
+    justify-content: flex-end
+    margin-right: 1.5rem
+    .navbar-nav
+        .nav-link
+            font-size: 1.5rem
+            font-family: variables.$primary-font
+            color: #fff
+            &:hover
+                color: variables.$primary-color
+        a.active
+            color: variables.$primary-color
+            text-decoration: underline
+            text-underline-offset: 10px
+            font-weight: 600
+
+@media screen and (max-width: 992px)
+    .navbar-collapse
+        justify-content: start
+        padding-top: 1em
+        padding-left: 1em

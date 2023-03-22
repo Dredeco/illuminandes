@@ -1,0 +1,82 @@
+@use 'variables'
+
+.contact
+    background-color: variables.$gray-color
+    position: relative
+    padding: 1rem .5rem
+    padding-top: 4rem !important
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 100%
+    text-align: center
+    color: #fff
+    h1
+
+
+    .contact-wrapper
+        display: flex
+        flex-wrap: wrap
+        width: 100%
+        .contact-form
+            text-align: start
+            width: 100%
+            display: flex
+            flex-direction: column
+            padding: 0 20px
+            label
+                font-weight: 600
+            input, textarea
+                height: 40px
+                background-color: #fff
+                border: 1px solid variables.$primary-color
+                padding: 5px 5px
+                margin: 5px 0
+            textarea
+                z-index: 5
+                width: 100%
+                height: 100px
+                max-height: 400px
+                resize: vertical
+            button
+                color: #D28930
+                margin: 20px 0
+                width: 100px
+                height: 50px
+                background-color: #fff
+                border: 1px solid #D28930
+                &:hover
+                    background-color: #D28930
+                    color: #fff
+
+        .contact-info
+            width: 100%
+            margin: 10px 0
+            a
+                width: auto
+            svg
+                display: inline
+                width: auto
+                margin-right: 10px
+                margin-bottom: 8px
+                color: variables.$dark-yellow
+            strong
+                font-size: 20px
+                color: variables.$secondary-color
+            p
+                font-size: 20px
+                margin: 0px 0px
+                padding: 5px 5px
+                display: flex
+                justify-content: center
+                a
+                    svg
+                        color: variables.$dark-yellow
+                        font-size: 2.5rem
+
+@media screen and (min-width: 768px)
+    .contact-form
+        width: 48% !important
+    .contact-info
+        width: 48% !important
